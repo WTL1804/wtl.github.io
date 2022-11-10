@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Deeplink跳转</title>
+</head>
+<body>
+<p align="center" style="font-size:32px">DeepLink链接: <input type="text" id="deepLinkUrl" style="width:300px;height:50px"></p>
+<a onclick="jumpLink()">Tiktok</a>
+<br>
+<div style="text-align:center">
+<Button onclick="jumpLink()" style="font-size:36px" >点击跳转</Button>
+</div>
+<script type="text/javascript">
+    function jumpLink() {
+        window.location.href = "snssdk1233://openRecord?enter_from=direct_shoot&tab=live&source_params=%7B%22enter_from%22%3A%22h5_broadcast_apply_111%22%2C%22room_create_source%22%3A%221%22%2C%22create_source_detail%22%3A%2211243%22%2C%22child_tab%22%3A%22livestudio%22%7D";
+        var deepLink = document.getElementById("deepLinkUrl").value;
+    }
+</script>
+</body>
+</html>
